@@ -108,3 +108,22 @@ response = urllib.request.urlopen(req)
 result = response.read()
 print(result)
 **Result → 0 (Legit) or 1 (Fraud)
+
+
+
+💰 Cost Estimate
+
+Workspace: Minimal (storage only)
+Compute Instance: ~$0.38/hour
+AutoML Experiment (5 hrs): ~$1.90
+Model Deployment (A1_v2, continuous): ~$36/month
+
+(Based on Azure pricing, may vary)
+
+
+⚠️ Troubleshooting
+
+Error: ResourceOperationFailure
+Ensure Microsoft.MachineLearningServices & Microsoft.CognitiveServices are registered in subscription
+Try deploying in available regions (East US, West US)
+Request quota increase if VM limits reached
